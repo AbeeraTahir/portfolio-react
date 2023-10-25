@@ -40,9 +40,13 @@ const ProjectCard = ({
 
           <div className="absolute inset-0 flex gap-1 justify-end m-2 card-img_hover h-9">
             {projectIcons.map(({ name, icon, link }, index) => (
-              <Tooltip title={name} position="top" arrow={true} size="small">
+              <Tooltip
+                key={index}
+                title={name}
+                position="top"
+                arrow={true}
+                size="small">
                 <div
-                  key={index}
                   onClick={() => window.open(link, "_blank")}
                   className="black-gradient w-8 h-8 rounded-full flex justify-center items-center cursor-pointer">
                   <img
@@ -86,7 +90,7 @@ const Works = () => {
       <div className="w-full flex">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className="mt-3 text-secondary text-[18px] max-w-3xl leading-[30px]">
+          className="mt-3 text-secondary text-[16px] sm:text-[18px] max-w-3xl leading-[30px]">
           Explore the tangible evidence of my skills and experience in the
           following projects!
         </motion.p>

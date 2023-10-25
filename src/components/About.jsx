@@ -16,7 +16,7 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-[45rem] leading-[30px]">
+        className="mt-4 text-secondary text-[16px] sm:text-[18px] max-w-[45rem] leading-[30px]">
         I'm a full-stack developer with a Computer Science background and 1+
         year of experience in creating 15+ interactive and user-friendly web
         applications with the expertise in React, Next.js, and RoR. I can help

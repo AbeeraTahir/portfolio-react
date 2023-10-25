@@ -8,7 +8,7 @@ import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants";
 
 const TechCard = ({ index, name, icon }) => (
-  <Tilt className="xs:w-[170px] w-full">
+  <Tilt className="xs:w-[170px] w-[135px] max-[320px]:w-[120px]">
     <motion.div
       variants={fadeIn("right", "tween", index * 0.25, 0.5)}
       className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card">
@@ -25,7 +25,9 @@ const TechCard = ({ index, name, icon }) => (
           className="w-16 h-16 object-contain"
         />
 
-        <h3 className="text-white text-[20px] font-bold text-center">{name}</h3>
+        <h3 className="text-white text-[16px] xs:text-[20px] font-bold text-center">
+          {name}
+        </h3>
       </div>
     </motion.div>
   </Tilt>
@@ -42,11 +44,11 @@ const Tech = () => {
       <div className="w-full flex">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className="mt-3 text-secondary text-[18px] max-w-3xl leading-[30px]">
+          className="mt-3 text-secondary text-[16px] sm:text-[18px] max-w-3xl leading-[30px]">
           Here's a glimpse of the skills and technologies I bring to the table!
         </motion.p>
       </div>
-      <div className="mt-12 flex flex-row flex-wrap justify-center gap-11">
+      <div className="mt-12 flex flex-row flex-wrap justify-center xs:gap-11 gap-6 max-[359px]:gap-3">
         {technologies.map((technologies, index) => (
           <TechCard key={index} index={index} {...technologies} />
         ))}
