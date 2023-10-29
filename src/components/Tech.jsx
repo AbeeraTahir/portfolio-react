@@ -36,17 +36,17 @@ const TechCard = ({ index, name, icon }) => (
 const Tech = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      {/* <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} `}>My tech stack</p>
         <h2 className={`${styles.sectionHeadText}`}>Skills.</h2>
-      </motion.div>
+      </motion.div> */}
 
       <div className="w-full flex">
-        <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
+        <p
+          // variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[16px] sm:text-[18px] max-w-3xl leading-[30px]">
           Here's a glimpse of the skills and technologies I bring to the table!
-        </motion.p>
+        </p>
       </div>
       <div className="mt-12 flex flex-row flex-wrap justify-center xs:gap-11 gap-6 max-[359px]:gap-3">
         {technologies.map((technologies, index) => (

@@ -23,9 +23,9 @@ const Hero = () => {
           <motion.p
             variants={HeroItemsVariant}
             className="text-secondary text-[16px] sm:text-[20px] mt-4 max-w-[45rem] sm:leading-[32px] leading-[28px]">
-            I'm your facilitator in turning your tech visions into reality.
-            Enthusiastic about problem-solving and creating exceptional user
-            experiences. Let's build something remarkable together!
+            I'm your dedicated guide in turning your tech visions into reality.
+            Enthusiastic about problem-solving and creating remarkable user
+            experiences. Let's build something exceptional together!
           </motion.p>
           <motion.ul
             variants={HeroItemsVariant}
