@@ -31,24 +31,26 @@ const Hero = () => {
             variants={HeroItemsVariant}
             className="flex items-center gap-5 mt-6">
             {socialMediaIcons.map(({ id, name, icon, url }, index) => (
-              <Tooltip
-                key={id}
-                title={name}
-                position="bottom"
-                arrow={true}
-                size="small">
-                <motion.li className="w-[40px] green-pink-gradient p-[5px] rounded-full flex items-center shadow-card transition-all duration-200 transform hover:scale-110">
-                  <a href={url} target="__blank">
-                    <img src={icon} width={40} alt={name} />
-                  </a>
-                </motion.li>
-              </Tooltip>
+              <li>
+                <Tooltip
+                  key={id}
+                  title={name}
+                  position="bottom"
+                  arrow={true}
+                  size="small">
+                  <motion.div className="w-[40px] green-pink-gradient p-[5px] rounded-full flex items-center shadow-card transition-all duration-200 transform hover:scale-110">
+                    <a href={url} target="__blank">
+                      <img src={icon} width={40} alt={name} />
+                    </a>
+                  </motion.div>
+                </Tooltip>
+              </li>
             ))}
           </motion.ul>
         </motion.div>
       </div>
       <div className="absolute sm:bottom-5 bottom-8 w-full flex justify-center items-center">
-        <a href="#about">
+        <a href="#about" aria-label="scroll down">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.div
               animate={{
