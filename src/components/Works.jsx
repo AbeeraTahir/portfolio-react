@@ -1,5 +1,4 @@
 import React from "react";
-import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
@@ -31,7 +30,7 @@ const ProjectCard = ({
         transition: { duration: 0.3 },
       }}>
       <div className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
-        <div className="relative w-full h-[220px]">
+        <div className="relative w-full h-[150px]">
           <img
             src={image}
             alt="project_image"

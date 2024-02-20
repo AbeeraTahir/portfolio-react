@@ -13,15 +13,16 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 
-import linkedin from "./icons/linkedin.svg"
-import githubHero from "./icons/github.svg"
-import twitter from "./icons/twitter.svg"
-import angellist from "./icons/angellist.svg"
-import mail from "./icons/mail.png"
+import linkedin from "./icons/linkedin.svg";
+import githubHero from "./icons/github.svg";
+import twitter from "./icons/twitter.svg";
+import angellist from "./icons/angellist.svg";
+import mail from "./icons/mail.png";
 
-import bookstore from "./bookstore.png"
-import sth from "./sth.png"
-import crypto from "./crypto.png"
+import bookstore from "./bookstore.png";
+import sth from "./sth.png";
+import BlogSphere from "./BlogSphere.png";
+import CryptoTrackr from "./CryptoTrackr.png";
 
 export {
   logo,
@@ -44,5 +45,6 @@ export {
   mail,
   bookstore,
   sth,
-  crypto
+  BlogSphere,
+  CryptoTrackr,
 };
