@@ -7,9 +7,13 @@ import { HeroVariant, HeroItemsVariant } from "../utils/motion";
 
 const Hero = () => {
   return (
-    <section className="relative w-full h-screen mx-auto">
-      <div className="sm:px-20 px-6 absolute transform -translate-y-1/2 top-1/2 max-w-7xl max-auto flex flex-row items-start gap-5">
-        <motion.div variants={HeroVariant} initial="hidden" animate="visible">
+    <section className="relative h-screen w-full flex items-center">
+      <div className="absolute sm:px-24 2xl:px-52 px-6">
+        <motion.div
+          variants={HeroVariant}
+          initial="hidden"
+          animate="visible"
+          className="flex flex-col">
           <motion.h1
             variants={HeroItemsVariant}
             className={`${styles.heroHeadText} text-white`}>
@@ -17,29 +21,32 @@ const Hero = () => {
           </motion.h1>
           <motion.h2
             variants={HeroItemsVariant}
-            className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I’m a Full-Stack Web Developer <br className="sm:block hidden" />{" "}
+            className={`${styles.heroSubText} mt-3 text-white-100`}>
+            I’m a Full-Stack Developer, <br className="sm:block hidden" />{" "}
+            devoted to craft exceptional digital solutions!
           </motion.h2>
           <motion.p
             variants={HeroItemsVariant}
-            className="text-secondary text-[16px] sm:text-[20px] mt-4 max-w-[45rem] sm:leading-[32px] leading-[28px]">
-            I'm your dedicated guide in turning your tech visions into reality.
-            Enthusiastic about problem-solving and creating remarkable user
-            experiences. Let's build something exceptional together!
+            className={`${styles.sectionSubText} mt-6 text-secondary`}>
+            Let's Connect:
           </motion.p>
           <motion.ul
             variants={HeroItemsVariant}
-            className="flex items-center gap-5 mt-6">
-            {socialMediaIcons.map(({ id, name, icon, url }, index) => (
+            className="flex items-center gap-4 mt-4">
+            {socialMediaIcons.map(({ id, name, icon, url }) => (
               <li key={id}>
                 <Tooltip
                   title={name}
                   position="bottom"
                   arrow={true}
                   size="small">
-                  <motion.div className="w-[40px] green-pink-gradient p-[5px] rounded-full flex items-center shadow-card transition-all duration-200 transform hover:scale-110">
+                  <motion.div className="w-[45px] h-[45px] transition-all duration-200 transform hover:scale-110 shadow-card">
                     <a href={url} target="__blank">
-                      <img src={icon} width={40} alt={name} />
+                      <div className="w-full h-full green-pink-gradient p-[1px] rounded-full shadow-card">
+                        <div className=" bg-tertiary w-full h-full rounded-full flex items-center justify-center ">
+                          {icon}
+                        </div>
+                      </div>
                     </a>
                   </motion.div>
                 </Tooltip>

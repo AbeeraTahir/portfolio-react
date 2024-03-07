@@ -18,6 +18,11 @@ import {
   CryptoTrackr,
 } from "../assets";
 
+import { FaLinkedinIn } from "react-icons/fa";
+import { TbBrandGithubFilled } from "react-icons/tb";
+import { SiWellfound } from "react-icons/si";
+import { IoMdMail } from "react-icons/io";
+
 export const navLinks = [
   {
     id: "about",
@@ -37,31 +42,25 @@ const socialMediaIcons = [
   {
     id: 1,
     name: "Linkedin",
-    icon: linkedin,
+    icon: <FaLinkedinIn size={20} />,
     url: "https://www.linkedin.com/in/abeera-tahir/",
   },
   {
     id: 2,
     name: "Github",
-    icon: githubHero,
+    icon: <TbBrandGithubFilled size={20} />,
     url: "https://github.com/AbeeraTahir",
   },
   {
     id: 3,
-    name: "Twitter",
-    icon: twitter,
-    url: "https://twitter.com/AbeeraTahir8",
-  },
-  {
-    id: 4,
-    name: "Angelist",
-    icon: angellist,
+    name: "Wellfound",
+    icon: <SiWellfound size={20} />,
     url: "https://wellfound.com/u/abeera-tahir",
   },
   {
-    id: 5,
+    id: 4,
     name: "Mail",
-    icon: mail,
+    icon: <IoMdMail size={20} />,
     url: "mailto:abeeratahir2018@gmail.com",
   },
 ];
