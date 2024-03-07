@@ -1,14 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { textVariant, fadeIn } from "../utils/motion";
-import Tilt from "react-tilt";
 import { styles } from "../styles";
 
 import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants";
 
 const TechCard = ({ index, name, icon }) => (
-  <Tilt className="xs:w-[170px] w-[135px] max-[320px]:w-[120px]">
+  <div className="xs:w-[170px] w-[135px] max-[320px]:w-[120px]">
     <motion.div
       variants={fadeIn("right", "tween", index * 0.25, 0.5)}
       className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card">
@@ -30,7 +29,7 @@ const TechCard = ({ index, name, icon }) => (
         </h3>
       </div>
     </motion.div>
-  </Tilt>
+  </div>
 );
 
 const Tech = () => {

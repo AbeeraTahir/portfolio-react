@@ -31,9 +31,8 @@ const Hero = () => {
             variants={HeroItemsVariant}
             className="flex items-center gap-5 mt-6">
             {socialMediaIcons.map(({ id, name, icon, url }, index) => (
-              <li>
+              <li key={id}>
                 <Tooltip
-                  key={id}
                   title={name}
                   position="bottom"
                   arrow={true}
