@@ -61,7 +61,7 @@ const socialMediaIcons = [
     id: 4,
     name: "Mail",
     icon: <IoMdMail size={20} />,
-    url: "mailto:abeeratahir2018@gmail.com",
+    url: "mailto:dev.abeeratahir@gmail.com",
   },
 ];
 

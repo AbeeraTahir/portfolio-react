@@ -87,21 +87,21 @@ export const staggerContainer = (staggerChildren, delayChildren) => {
   };
 };
 
-export const HeroVariant = {
+export const SocialVariant = {
   visible: {
     transition: { staggerChildren: 0.1 },
   },
   hidden: {},
 };
 
-export const HeroItemsVariant = {
+export const SocialItemsVariant = {
   visible: {
     opacity: 1,
-    y: 0,
+    x: 0,
     transition: { duration: 0.7 },
   },
   hidden: {
     opacity: 0,
-    y: -50,
+    x: -50,
   },
 };
