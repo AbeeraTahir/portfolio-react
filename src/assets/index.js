@@ -12,6 +12,7 @@ import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
+import nextjs from "./tech/nextjs.png";
 import mongodb from "./tech/mongodb.png";
 
 import bookstore from "./bookstore.png";
@@ -34,6 +35,7 @@ export {
   redux,
   tailwind,
   mongodb,
+  nextjs,
   typescript,
   bookstore,
   sth,

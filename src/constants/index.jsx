@@ -7,6 +7,7 @@ import {
   redux,
   tailwind,
   git,
+  nextjs,
   mongodb,
   sth,
   bookstore,
@@ -84,16 +85,20 @@ const technologies = [
     icon: reactjs,
   },
   {
+    name: "Nextjs",
+    icon: nextjs,
+  },
+  {
     name: "Redux Toolkit",
     icon: redux,
   },
   {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
     name: "MongoDB",
     icon: mongodb,
+  },
+  {
+    name: "Tailwind CSS",
+    icon: tailwind,
   },
   {
     name: "git",
