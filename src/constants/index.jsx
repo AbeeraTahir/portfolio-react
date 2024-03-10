@@ -11,6 +11,7 @@ import {
   sth,
   bookstore,
   BlogSphere,
+  modest,
   CryptoTrackr,
 } from "../assets";
 
@@ -145,10 +146,32 @@ const projects = [
     source_code_link: "https://github.com/AbeeraTahir/crypto-trackr.git",
     live_link: "https://glistening-sprite-976d14.netlify.app/",
   },
+  // {
+  //   name: "Space Travelers' Hub",
+  //   description:
+  //     "A website, built with React and Redux, that works with real live data from the SpaceX API to allow users to book rockets and join selected space missions.",
+  //   tags: [
+  //     {
+  //       name: "react",
+  //       color: "blue-text-gradient",
+  //     },
+  //     {
+  //       name: "redux",
+  //       color: "green-text-gradient",
+  //     },
+  //     {
+  //       name: "css",
+  //       color: "pink-text-gradient",
+  //     },
+  //   ],
+  //   image: sth,
+  //   source_code_link: "https://github.com/AbeeraTahir/Space-Travelers-Hub.git",
+  //   live_link: "https://superb-cucurucho-982ab9.netlify.app/",
+  // },
   {
-    name: "Space Travelers' Hub",
+    name: "Bookstore",
     description:
-      "A website, built with React and Redux, that works with real live data from the SpaceX API to allow users to book rockets and join selected space missions.",
+      "Bookstore is a website that allows users to see the list of books, add a book to the list, and remove a book from the list. It is built with React, Redux, and Bookstore API.",
     tags: [
       {
         name: "react",
@@ -163,9 +186,27 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: sth,
-    source_code_link: "https://github.com/AbeeraTahir/Space-Travelers-Hub.git",
-    live_link: "https://superb-cucurucho-982ab9.netlify.app/",
+    image: bookstore,
+    source_code_link: "https://github.com/AbeeraTahir/Bookstore.git",
+    live_link: "https://friendly-manatee-6f4f18.netlify.app/",
+  },
+  {
+    name: "Modest Landing Page",
+    description:
+      "Modest Landing Page is a desktop landing page, built with React, inspired from the Modest Landing Page PSD Design. The landing page consists of different sections representing different information, such as about, team, work, services, features, and contact.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: modest,
+    source_code_link: "https://github.com/AbeeraTahir/modest-landing-page.git",
+    live_link: "https://modest-landing-page.netlify.app/",
   },
 ];
 

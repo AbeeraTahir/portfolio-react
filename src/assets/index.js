@@ -18,6 +18,7 @@ import bookstore from "./bookstore.png";
 import sth from "./sth.png";
 import BlogSphere from "./BlogSphere.png";
 import CryptoTrackr from "./CryptoTrackr.png";
+import modest from "./modest.png";
 
 export {
   logo,
@@ -38,4 +39,5 @@ export {
   sth,
   BlogSphere,
   CryptoTrackr,
+  modest,
 };

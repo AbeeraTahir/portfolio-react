@@ -42,7 +42,7 @@ const Tech = () => {
 
       <div className="w-full flex">
         <p
-          // variants={fadeIn("", "", 0.1, 1)}
+          variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[16px] sm:text-[18px] max-w-3xl leading-[30px]">
           Here's a glimpse of the skills and technologies I bring to the table!
         </p>
