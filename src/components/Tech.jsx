@@ -35,10 +35,10 @@ const TechCard = ({ index, name, icon }) => (
 const Tech = () => {
   return (
     <>
-      {/* <motion.div variants={textVariant()}>
+      <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} `}>My tech stack</p>
         <h2 className={`${styles.sectionHeadText}`}>Skills.</h2>
-      </motion.div> */}
+      </motion.div>
 
       <div className="w-full flex">
         <p

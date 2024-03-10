@@ -12,12 +12,7 @@ import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
-
-import linkedin from "./icons/linkedin.svg";
-import githubHero from "./icons/github.svg";
-import twitter from "./icons/twitter.svg";
-import angellist from "./icons/angellist.svg";
-import mail from "./icons/mail.png";
+import mongodb from "./tech/mongodb.png";
 
 import bookstore from "./bookstore.png";
 import sth from "./sth.png";
@@ -37,12 +32,8 @@ export {
   reactjs,
   redux,
   tailwind,
+  mongodb,
   typescript,
-  linkedin,
-  githubHero,
-  twitter,
-  angellist,
-  mail,
   bookstore,
   sth,
   BlogSphere,

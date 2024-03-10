@@ -17,8 +17,8 @@ function App() {
           <Navbar />
           <Hero />
         </div>
-        <Works />
         <About />
+        <Works />
         <Tech />
         <div className="relative z-0">
           <Contact />

@@ -7,11 +7,7 @@ import {
   redux,
   tailwind,
   git,
-  linkedin,
-  githubHero,
-  angellist,
-  twitter,
-  mail,
+  mongodb,
   sth,
   bookstore,
   BlogSphere,
@@ -93,6 +89,10 @@ const technologies = [
   {
     name: "Tailwind CSS",
     icon: tailwind,
+  },
+  {
+    name: "MongoDB",
+    icon: mongodb,
   },
   {
     name: "git",
