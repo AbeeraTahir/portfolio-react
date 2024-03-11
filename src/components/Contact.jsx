@@ -1,20 +1,18 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { useForm } from "@formspree/react";
+import toast from "react-hot-toast";
 
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
 const Contact = () => {
-  const formRef = useRef();
   const [form, setForm] = useState({
     name: "",
     email: "",
     message: "",
   });
-
-  const [loading, setLoading] = useState(false);
 
   const [state, handleSubmit] = useForm("mlevbkgd");
 
@@ -28,6 +26,11 @@ const Contact = () => {
     });
   };
 
+  if (state.succeeded) {
+    console.log("success");
+    toast.success("Thank you for sending your message!");
+  }
+
   return (
     <div className="flex justify-center items-center">
       <motion.div
@@ -37,22 +40,8 @@ const Contact = () => {
         <h3 className={styles.sectionHeadText}>Contact.</h3>
 
         <form
-          ref={formRef}
-          onSubmit={async (e) => {
-            e.preventDefault();
-
-            if (loading) {
-              return;
-            }
-
-            setLoading(true);
-            await handleSubmit(e);
-
-            if (state.succeeded) {
-              setForm({ name: "", email: "", message: "" });
-              setLoading(false);
-            }
-          }}
+          method="POST"
+          onSubmit={handleSubmit}
           className="mt-12 flex flex-col gap-8">
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">Your Name</span>
@@ -91,7 +80,7 @@ const Contact = () => {
           <button
             type="submit"
             className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary">
-            {loading ? "Sending..." : "Send"}
+            {state.submitting ? "Sending..." : "Send"}
           </button>
         </form>
       </motion.div>
