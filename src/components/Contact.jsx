@@ -27,7 +27,6 @@ const Contact = () => {
   };
 
   if (state.succeeded) {
-    console.log("success");
     toast.success("Thank you for sending your message!");
   }
 

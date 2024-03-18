@@ -8,24 +8,28 @@ import {
   Works,
   StarsCanvas,
 } from "./components";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
-    <BrowserRouter>
-      <div className="relative z-0 bg-primary">
-        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
-          <Navbar />
-          <Hero />
+    <>
+      <Toaster />
+      <BrowserRouter>
+        <div className="relative z-0 bg-primary">
+          <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+            <Navbar />
+            <Hero />
+          </div>
+          <About />
+          <Works />
+          <Tech />
+          <div className="relative z-0">
+            <Contact />
+            <StarsCanvas />
+          </div>
         </div>
-        <About />
-        <Works />
-        <Tech />
-        <div className="relative z-0">
-          <Contact />
-          <StarsCanvas />
-        </div>
-      </div>
-    </BrowserRouter>
+      </BrowserRouter>
+    </>
   );
 }
 
