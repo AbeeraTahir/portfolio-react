@@ -8,27 +8,10 @@ import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
 const Contact = () => {
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
   const [state, handleSubmit, reset] = useForm("mlevbkgd");
-
-  const handleChange = (e) => {
-    const { target } = e;
-    const { name, value } = target;
-
-    setForm({
-      ...form,
-      [name]: value,
-    });
-  };
 
   if (state.succeeded) {
     toast.success("Thank you for sending your message!");
-    reset();
   }
 
   return (
