@@ -18,10 +18,10 @@ const About = () => {
         className="mt-4 text-secondary text-[16px] sm:text-[18px] max-w-[45rem] leading-[30px]">
         I'm a full-stack developer who loves to craft seamless websites with the
         expertise in JavaScript, React, Next.js, Redux Toolkit, and MongoDB. I
-        have a Computer Science background and 1+ years of experience in
-        creating 20+ interactive and user-friendly web applications. Look
-        through some of my work and experience! If you like what you see and
-        have a project you need coded, please don’t hestiate to{" "}
+        have a Computer Science background and 1 year of experience in creating
+        20+ interactive and user-friendly web applications. Look through some of
+        my work and experience! If you like what you see and have a project you
+        need coded, please don’t hestiate to{" "}
         <span className="underline">
           <a href="#contact">contact</a>
         </span>{" "}
